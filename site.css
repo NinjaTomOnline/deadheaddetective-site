@@ -313,11 +313,13 @@ li + li {
 
 .screenshot-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
 .screenshot-card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 24px;
@@ -325,6 +327,8 @@ li + li {
 }
 
 .screenshot-frame {
+  display: flex;
+  justify-content: center;
   padding: 18px 18px 0;
   background:
     radial-gradient(circle at top left, rgba(116, 221, 255, 0.12), transparent 42%),
@@ -332,7 +336,7 @@ li + li {
 }
 
 .screenshot-frame img {
-  width: 100%;
+  width: min(100%, 245px);
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 24px 40px rgba(0, 0, 0, 0.28);
@@ -401,7 +405,7 @@ code {
   }
 
   .screenshot-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 
   .span-4,
