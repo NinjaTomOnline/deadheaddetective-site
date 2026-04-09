@@ -115,81 +115,179 @@
         <div class="section-header">
           <div>
             <p class="eyebrow">Screens</p>
-            <h2>Current iPhone app captures</h2>
+            <h2>Current product captures</h2>
           </div>
-          <p>These screenshots come from the current in-app flows and give the public site a real product view while the broader App Store asset set is still being finalized.</p>
+          <p>Switch between iPhone and iPad to see the current launch UI without mixing phone and tablet layouts.</p>
         </div>
 
-        <div class="screenshot-grid" aria-label="DeadHead Detective iPhone screenshots">
-          <article class="screenshot-card">
-            <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/01-dashboard-summary.png" data-lightbox-title="Dashboard summary at a glance" data-lightbox-caption="Start on the Dashboard with worth-it scoring, today’s totals, and quick visibility into mileage, deadhead, and retained sessions.">
-              <span class="phone-shot">
-                <span class="phone-shot-top"></span>
-                <img src="screenshots/iphone/01-dashboard-summary.png" alt="DeadHead Detective dashboard summary on iPhone">
-              </span>
-            </button>
-            <div class="screenshot-meta">
-              <span class="device-chip">iPhone</span>
-              <h3>Dashboard summary at a glance</h3>
-              <p>Start on the Dashboard with worth-it scoring, today’s totals, and quick visibility into mileage, deadhead, and retained sessions.</p>
-            </div>
-          </article>
+        <div class="gallery-toolbar">
+          <p class="small">These screenshots come from the current in-app flows and stay intentionally close to the launch surfaces already shipping.</p>
+          <div class="gallery-toggle" role="tablist" aria-label="Choose screenshot device">
+            <button class="gallery-tab active" id="gallery-tab-iphone" type="button" role="tab" aria-selected="true" aria-controls="gallery-panel-iphone" data-gallery-tab="iphone">iPhone</button>
+            <button class="gallery-tab" id="gallery-tab-ipad" type="button" role="tab" aria-selected="false" aria-controls="gallery-panel-ipad" data-gallery-tab="ipad">iPad</button>
+          </div>
+        </div>
 
-          <article class="screenshot-card">
-            <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/02-active-trip-overview.png" data-lightbox-title="Active trip overview" data-lightbox-caption="See live trip status, speed, idle time, deadhead percentage, and net profit without leaving the current session view.">
-              <span class="phone-shot">
-                <span class="phone-shot-top"></span>
-                <img src="screenshots/iphone/02-active-trip-overview.png" alt="DeadHead Detective active trip overview on iPhone">
-              </span>
-            </button>
-            <div class="screenshot-meta">
-              <span class="device-chip">iPhone</span>
-              <h3>Active trip overview</h3>
-              <p>See live trip status, speed, idle time, deadhead percentage, and net profit without leaving the current session view.</p>
-            </div>
-          </article>
+        <div class="gallery-panel" id="gallery-panel-iphone" role="tabpanel" aria-labelledby="gallery-tab-iphone" data-gallery-panel="iphone">
+          <div class="screenshot-grid screenshot-grid-phone" aria-label="DeadHead Detective iPhone screenshots">
+            <article class="screenshot-card">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/01-dashboard-summary.png" data-lightbox-title="Dashboard summary" data-lightbox-caption="See today’s score, mileage, earnings, and deadhead at a glance.">
+                <span class="phone-shot">
+                  <span class="phone-shot-top"></span>
+                  <img src="screenshots/iphone/01-dashboard-summary.png" alt="DeadHead Detective dashboard summary on iPhone">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPhone</span>
+                <h3>Dashboard summary</h3>
+                <p>See today’s score, mileage, earnings, and deadhead at a glance.</p>
+              </div>
+            </article>
 
-          <article class="screenshot-card">
-            <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/03-history-sessions.png" data-lightbox-title="Retained session history" data-lightbox-caption="Review prior sessions by platform, trip route, profit, and deadhead ratio from one scrolling history timeline.">
-              <span class="phone-shot">
-                <span class="phone-shot-top"></span>
-                <img src="screenshots/iphone/03-history-sessions.png" alt="DeadHead Detective history list on iPhone">
-              </span>
-            </button>
-            <div class="screenshot-meta">
-              <span class="device-chip">iPhone</span>
-              <h3>Retained session history</h3>
-              <p>Review prior sessions by platform, trip route, profit, and deadhead ratio from one scrolling history timeline.</p>
-            </div>
-          </article>
+            <article class="screenshot-card">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/02-active-trip-overview.png" data-lightbox-title="Active trip overview" data-lightbox-caption="Watch live status, speed, idle time, and current profit from one trip view.">
+                <span class="phone-shot">
+                  <span class="phone-shot-top"></span>
+                  <img src="screenshots/iphone/02-active-trip-overview.png" alt="DeadHead Detective active trip overview on iPhone">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPhone</span>
+                <h3>Active trip overview</h3>
+                <p>Watch live status, speed, idle time, and current profit from one trip view.</p>
+              </div>
+            </article>
 
-          <article class="screenshot-card">
-            <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/04-insights-trend.png" data-lightbox-title="Insights and deadhead trend" data-lightbox-caption="Track average net rate, weekly deadhead, and recurring route patterns from the Insights surface.">
-              <span class="phone-shot">
-                <span class="phone-shot-top"></span>
-                <img src="screenshots/iphone/04-insights-trend.png" alt="DeadHead Detective insights trend view on iPhone">
-              </span>
-            </button>
-            <div class="screenshot-meta">
-              <span class="device-chip">iPhone</span>
-              <h3>Insights and deadhead trend</h3>
-              <p>Track average net rate, weekly deadhead, and recurring route patterns from the Insights surface.</p>
-            </div>
-          </article>
+            <article class="screenshot-card">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/03-history-sessions.png" data-lightbox-title="Session history" data-lightbox-caption="Scroll past sessions with platform tags, route context, and trip totals.">
+                <span class="phone-shot">
+                  <span class="phone-shot-top"></span>
+                  <img src="screenshots/iphone/03-history-sessions.png" alt="DeadHead Detective history list on iPhone">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPhone</span>
+                <h3>Session history</h3>
+                <p>Scroll past sessions with platform tags, route context, and trip totals.</p>
+              </div>
+            </article>
 
-          <article class="screenshot-card">
-            <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/05-active-trip-route-controls.png" data-lightbox-title="Live route and trip controls" data-lightbox-caption="Open the route map, inspect the current session path, and keep pause or end-trip controls close at hand.">
-              <span class="phone-shot">
-                <span class="phone-shot-top"></span>
-                <img src="screenshots/iphone/05-active-trip-route-controls.png" alt="DeadHead Detective active trip route and controls on iPhone">
-              </span>
-            </button>
-            <div class="screenshot-meta">
-              <span class="device-chip">iPhone</span>
-              <h3>Live route and trip controls</h3>
-              <p>Open the route map, inspect the current session path, and keep pause or end-trip controls close at hand.</p>
-            </div>
-          </article>
+            <article class="screenshot-card">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/04-insights-trend.png" data-lightbox-title="Insights trend" data-lightbox-caption="Review deadhead trends, net-rate snapshots, and route patterns in one place.">
+                <span class="phone-shot">
+                  <span class="phone-shot-top"></span>
+                  <img src="screenshots/iphone/04-insights-trend.png" alt="DeadHead Detective insights trend view on iPhone">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPhone</span>
+                <h3>Insights trend</h3>
+                <p>Review deadhead trends, net-rate snapshots, and route patterns in one place.</p>
+              </div>
+            </article>
+
+            <article class="screenshot-card">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/05-active-trip-route-controls.png" data-lightbox-title="Live route controls" data-lightbox-caption="Keep the route map and pause or end-trip controls within reach.">
+                <span class="phone-shot">
+                  <span class="phone-shot-top"></span>
+                  <img src="screenshots/iphone/05-active-trip-route-controls.png" alt="DeadHead Detective active trip route and controls on iPhone">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPhone</span>
+                <h3>Live route controls</h3>
+                <p>Keep the route map and pause or end-trip controls within reach.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="gallery-panel" id="gallery-panel-ipad" role="tabpanel" aria-labelledby="gallery-tab-ipad" data-gallery-panel="ipad" hidden>
+          <div class="screenshot-grid screenshot-grid-tablet" aria-label="DeadHead Detective iPad screenshots">
+            <article class="screenshot-card screenshot-card-tablet">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/ipad/01-dashboard-summary.png" data-lightbox-title="Dashboard summary" data-lightbox-caption="Use the wider dashboard layout to review score, earnings, deadhead, and mileage trend together.">
+                <span class="tablet-shot">
+                  <span class="tablet-shot-top"></span>
+                  <img src="screenshots/ipad/01-dashboard-summary.png" alt="DeadHead Detective dashboard summary on iPad">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPad</span>
+                <h3>Dashboard summary</h3>
+                <p>Use the wider dashboard layout to review score, earnings, deadhead, and mileage trend together.</p>
+              </div>
+            </article>
+
+            <article class="screenshot-card screenshot-card-tablet">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/ipad/02-active-trip-ready.png" data-lightbox-title="Trip ready state" data-lightbox-caption="See standby status and one-tap start controls before the next drive begins.">
+                <span class="tablet-shot">
+                  <span class="tablet-shot-top"></span>
+                  <img src="screenshots/ipad/02-active-trip-ready.png" alt="DeadHead Detective active trip ready state on iPad">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPad</span>
+                <h3>Trip ready state</h3>
+                <p>See standby status and one-tap start controls before the next drive begins.</p>
+              </div>
+            </article>
+
+            <article class="screenshot-card screenshot-card-tablet">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/ipad/03-active-trip-live.png" data-lightbox-title="Live trip state" data-lightbox-caption="Follow the live session, controls, metrics, and route map from one landscape view.">
+                <span class="tablet-shot">
+                  <span class="tablet-shot-top"></span>
+                  <img src="screenshots/ipad/03-active-trip-live.png" alt="DeadHead Detective live active trip on iPad">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPad</span>
+                <h3>Live trip state</h3>
+                <p>Follow the live session, controls, metrics, and route map from one landscape view.</p>
+              </div>
+            </article>
+
+            <article class="screenshot-card screenshot-card-tablet">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/ipad/04-history-split-view.png" data-lightbox-title="History split view" data-lightbox-caption="Browse the trip list and selected session details side by side.">
+                <span class="tablet-shot">
+                  <span class="tablet-shot-top"></span>
+                  <img src="screenshots/ipad/04-history-split-view.png" alt="DeadHead Detective history split view on iPad">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPad</span>
+                <h3>History split view</h3>
+                <p>Browse the trip list and selected session details side by side.</p>
+              </div>
+            </article>
+
+            <article class="screenshot-card screenshot-card-tablet">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/ipad/05-insights-trend.png" data-lightbox-title="Insights split view" data-lightbox-caption="Compare deadhead trends and summary metrics in a dedicated two-pane insights layout.">
+                <span class="tablet-shot">
+                  <span class="tablet-shot-top"></span>
+                  <img src="screenshots/ipad/05-insights-trend.png" alt="DeadHead Detective insights split view on iPad">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPad</span>
+                <h3>Insights split view</h3>
+                <p>Compare deadhead trends and summary metrics in a dedicated two-pane insights layout.</p>
+              </div>
+            </article>
+
+            <article class="screenshot-card screenshot-card-tablet">
+              <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/ipad/06-settings-controls.png" data-lightbox-title="Settings and diagnostics" data-lightbox-caption="Adjust tracking, alerts, and diagnostics from one tablet-friendly settings screen.">
+                <span class="tablet-shot">
+                  <span class="tablet-shot-top"></span>
+                  <img src="screenshots/ipad/06-settings-controls.png" alt="DeadHead Detective settings and diagnostics on iPad">
+                </span>
+              </button>
+              <div class="screenshot-meta">
+                <span class="device-chip">iPad</span>
+                <h3>Settings and diagnostics</h3>
+                <p>Adjust tracking, alerts, and diagnostics from one tablet-friendly settings screen.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
