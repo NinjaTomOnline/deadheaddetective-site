@@ -6,6 +6,7 @@
   <meta name="description" content="DeadHead Detective helps gig drivers track trips, separate paid and unpaid miles, and review profitability on iPhone and iPad.">
   <title>DeadHead Detective</title>
   <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
   <div class="shell">
@@ -121,9 +122,12 @@
 
         <div class="screenshot-grid" aria-label="DeadHead Detective iPhone screenshots">
           <article class="screenshot-card">
-            <div class="screenshot-frame">
-              <img src="screenshots/iphone/01-dashboard-summary.png" alt="DeadHead Detective dashboard summary on iPhone">
-            </div>
+            <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/01-dashboard-summary.png" data-lightbox-title="Dashboard summary at a glance" data-lightbox-caption="Start on the Dashboard with worth-it scoring, today’s totals, and quick visibility into mileage, deadhead, and retained sessions.">
+              <span class="phone-shot">
+                <span class="phone-shot-top"></span>
+                <img src="screenshots/iphone/01-dashboard-summary.png" alt="DeadHead Detective dashboard summary on iPhone">
+              </span>
+            </button>
             <div class="screenshot-meta">
               <span class="device-chip">iPhone</span>
               <h3>Dashboard summary at a glance</h3>
@@ -132,9 +136,12 @@
           </article>
 
           <article class="screenshot-card">
-            <div class="screenshot-frame">
-              <img src="screenshots/iphone/02-active-trip-overview.png" alt="DeadHead Detective active trip overview on iPhone">
-            </div>
+            <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/02-active-trip-overview.png" data-lightbox-title="Active trip overview" data-lightbox-caption="See live trip status, speed, idle time, deadhead percentage, and net profit without leaving the current session view.">
+              <span class="phone-shot">
+                <span class="phone-shot-top"></span>
+                <img src="screenshots/iphone/02-active-trip-overview.png" alt="DeadHead Detective active trip overview on iPhone">
+              </span>
+            </button>
             <div class="screenshot-meta">
               <span class="device-chip">iPhone</span>
               <h3>Active trip overview</h3>
@@ -143,9 +150,12 @@
           </article>
 
           <article class="screenshot-card">
-            <div class="screenshot-frame">
-              <img src="screenshots/iphone/03-history-sessions.png" alt="DeadHead Detective history list on iPhone">
-            </div>
+            <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/03-history-sessions.png" data-lightbox-title="Retained session history" data-lightbox-caption="Review prior sessions by platform, trip route, profit, and deadhead ratio from one scrolling history timeline.">
+              <span class="phone-shot">
+                <span class="phone-shot-top"></span>
+                <img src="screenshots/iphone/03-history-sessions.png" alt="DeadHead Detective history list on iPhone">
+              </span>
+            </button>
             <div class="screenshot-meta">
               <span class="device-chip">iPhone</span>
               <h3>Retained session history</h3>
@@ -154,9 +164,12 @@
           </article>
 
           <article class="screenshot-card">
-            <div class="screenshot-frame">
-              <img src="screenshots/iphone/04-insights-trend.png" alt="DeadHead Detective insights trend view on iPhone">
-            </div>
+            <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/04-insights-trend.png" data-lightbox-title="Insights and deadhead trend" data-lightbox-caption="Track average net rate, weekly deadhead, and recurring route patterns from the Insights surface.">
+              <span class="phone-shot">
+                <span class="phone-shot-top"></span>
+                <img src="screenshots/iphone/04-insights-trend.png" alt="DeadHead Detective insights trend view on iPhone">
+              </span>
+            </button>
             <div class="screenshot-meta">
               <span class="device-chip">iPhone</span>
               <h3>Insights and deadhead trend</h3>
@@ -165,9 +178,12 @@
           </article>
 
           <article class="screenshot-card">
-            <div class="screenshot-frame">
-              <img src="screenshots/iphone/05-active-trip-route-controls.png" alt="DeadHead Detective active trip route and controls on iPhone">
-            </div>
+            <button class="screenshot-frame" type="button" data-lightbox-image="screenshots/iphone/05-active-trip-route-controls.png" data-lightbox-title="Live route and trip controls" data-lightbox-caption="Open the route map, inspect the current session path, and keep pause or end-trip controls close at hand.">
+              <span class="phone-shot">
+                <span class="phone-shot-top"></span>
+                <img src="screenshots/iphone/05-active-trip-route-controls.png" alt="DeadHead Detective active trip route and controls on iPhone">
+              </span>
+            </button>
             <div class="screenshot-meta">
               <span class="device-chip">iPhone</span>
               <h3>Live route and trip controls</h3>
@@ -227,6 +243,20 @@
         <a class="button secondary" href="privacy.html">Privacy</a>
       </div>
     </footer>
+  </div>
+
+  <div class="lightbox" id="screenshot-lightbox" hidden>
+    <button class="lightbox-backdrop" type="button" aria-label="Close screenshot viewer"></button>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button class="lightbox-close" type="button" aria-label="Close screenshot viewer">Close</button>
+      <div class="lightbox-media">
+        <img id="lightbox-image" src="" alt="">
+      </div>
+      <div class="lightbox-copy">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-caption"></p>
+      </div>
+    </div>
   </div>
 </body>
 </html>

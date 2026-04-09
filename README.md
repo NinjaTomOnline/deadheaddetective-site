@@ -16,6 +16,7 @@ Use this template in a separate public GitHub repository so the main DeadHead De
 - `support.html`
 - `privacy.html`
 - `site.css`
+- `site.js`
 - `screenshots/` if you export approved public screenshots later
 - `.nojekyll`
 - `.github/workflows/publish-pages.yml`
